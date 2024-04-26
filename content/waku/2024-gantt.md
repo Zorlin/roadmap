@@ -1,10 +1,10 @@
 # Waku Roadmap 2024 Gantt Charts
 
-**DRAFT**
-
-The aim of those charts is to provide a visual on the 2024 milestones and justify the need for new hires.
+The aim of those charts is to provide a visual on the 2024 milestones, contributor work and completion dates.
+In **red** are the critical path for Status app short term goals.
 
 **Note the contributor assignments may not exactly match reality.**
+**This is still a draft.**
 
 ```mermaid
 gantt
@@ -13,8 +13,8 @@ gantt
     axisFormat %d-%b
 
     section Status - Basic Reliability
-        Enable testing of direct messages: milestone, after test-direct-msg, 0
-        Review connection management: milestone, 0
+        Enable testing of direct messages: crit, milestone, after test-direct-msg, 0
+        Review connection management: crit, milestone, 0
     section Validate RLN Relay
         Store v3: milestone, after storev3r storev3n storev3j, 0
         PostgreSQL maintenance: milestone, after pgsql, 0
@@ -38,6 +38,7 @@ gantt
     section chat/go-waku - chaitanyaprem
         DoS protection for req-res protocols: crit, dosreqresg, after dosreqresn, 15d
         Reliability Protocol for Resource-Restricted Clients: crit, relresreqc, after dosreqresg, 21d
+    section research
     section research - jm-clius
         White Paper: whitepaper, 2024-01-01, 360d
         RFC review: rfc-review, 2024-01-01, 90d
