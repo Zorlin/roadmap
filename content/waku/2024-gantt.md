@@ -69,10 +69,10 @@ gantt
         DoS Protection for Req-Res Protocols: crit, dosreqresn, 2024-01-01, 90d
     section nwaku - gabrielmer
         Reliability Protocol for Relay: crit, relrelay, 2024-05-01, 90d
-        Ethereum Address to Secure Channel: ethadr, after relay, 21d
+        Ethereum Address to Secure Channel: ethadr, 2024-09-01, 3w
     section nwaku - new hire 1
-        FQDN-Less Browser Connections: webrtcn, 2024-06-01, 15d
-        WebTransport: webtransportn, after webrtcn, 30d
+        FQDN-Less Browser Connections: webrtcn, 2024-09-01, 3w
+        WebTransport: webtransportn, after webrtcn, 5w
     section js-waku - weboko
         RLN in resource-restricted clients: rlnlight, 2024-01-01, 90d
         Local Web Development: localweb, 2024-02-01, 30d
