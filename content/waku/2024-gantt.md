@@ -17,15 +17,15 @@ gantt
         Review connection management: crit, milestone, 0
     section Validate RLN Relay
         Store v3: milestone, after storev3r storev3n storev3j, 0
-        PostgreSQL maintenance: milestone, after pgsql, 0
+        PostgreSQL maintenance: crit, milestone, after pgsql, 0
         RLNv2 in nwaku: milestone, after rlnv2, 0
         Maturing RLN: milestone, after maturing-rln, 0
-        Reliability Protocol for Relay: milestone, after relrelay, 0
+        Reliability Protocol for Relay: crit, milestone, after relrelay, 0
         NodeJS SDK: milestone, after nodejs, 0
     section Service Consumer Validation
-        DoS protection for req-res protocols: milestone, after dosreqresn dosreqresj dosreqresg, 0
+        DoS protection for req-res protocols: crit, milestone, after dosreqresn dosreqresj dosreqresg, 0
         Provision RLN for light push clients PoC: milestone, after provisionrlnr provisionrlnj, 0
-        Reliability Protocol for Resource-Restricted Clients: milestone, after relresreqc relresreqj, 0
+        Reliability Protocol for Resource-Restricted Clients: crit, milestone, after relresreqc relresreqj, 0
         Local Web Development: milestone, after localweb, 0
         React Native: milestone, after reactnative, 0
     section Service Incentization
@@ -47,7 +47,7 @@ gantt
         RLNv2: rlnv2, 2024-01-01, 120d
         Maturing RLN: maturing-rln, 2024-01-01, 360d
     section research - sionois
-        Storev3: storev3r, 2024-01-01, 120d
+        Storev3: crit, storev3r, 2024-01-01, 120d
         Active Capability Service Discovery PoC: csdr, after storev3r, 90d
     section research - s-tikhomirov
         Incentivization PoC 1: i18npoc1r, 2024-01-01, 120d
@@ -56,8 +56,8 @@ gantt
     section research - shash256
         Provision RLN for light push clients PoC: provisionrlnr, 2024-04-28, 30d
     section nwaku - ivansete
-        PostgreSQL Maintenance: pgqsl, 2024-01-01, 90d
-        Storev3: storev3n, after storev3r, 15d
+        PostgreSQL Maintenance: crit, pgqsl, 2024-01-01, 90d
+        Storev3: crit, storev3n, after storev3r, 15d
         NodeJS SDK: nodejs, 2024-03-01, 120d
     section nwaku - NagyZoltanPeter
         DoS Protection for Req-Res Protocols: crit, dosreqresn, 2024-01-01, 90d
@@ -79,7 +79,7 @@ gantt
     section js-waku - adklempner
         Auto-sharding and static sharding: crit, shard, 2024-01-01, 90d
         RLN in resource-restricted clients: rlnlight, 2024-01-01, 90d
-        Storev3: storev3j, after storev3r, 90d
+        Storev3: crit, storev3j, after storev3r, 90d
     section js-waku - new hire 1
         FQDN-Less Browser Connections: webrtcj, 2024-06-01, 45d
         WebTransport: webtransportj, after webtransportn, 30d
